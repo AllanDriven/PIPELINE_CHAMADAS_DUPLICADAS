@@ -1,0 +1,30 @@
+{
+  "conexao_banco": {
+    "servidor": "servidor_cnaco",
+    "banco_de_dados": "database_name",
+    "usuario": "user",
+    "senha": "password",
+    "driver": "ODBC Driver 17 for SQL Server"
+  },
+  "objetos_banco": {
+    "processos": [
+      {
+        "nome_processo": "Tempo Atendimento",
+        "procedure_executar": "dbo.SP_PROCEDURE_ATENDIMENTO",
+        "tabela_verificacao": "databese_name.dbo.TAB_ATENDIMENTO",
+        "coluna_data_verificacao": "DATA"
+      },
+      {
+        "nome_processo": "Chamadas Duplicadas",
+        "procedure_executar": "dbo.SP_PROCEDURE_CHAMADAS_DUPLICADAS",
+        "tabela_verificacao": "databese_name.dbo.TAB_CHAMADAS_DUPLICADAS",
+        "coluna_data_verificacao": "DATA"
+      }
+    ]
+  },
+  "notificacoes": {
+    "teams": {
+      "webhook_url": "https://cnxmail.webhook.office.com/......."
+    }
+  }
+}
